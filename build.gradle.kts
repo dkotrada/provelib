@@ -66,4 +66,6 @@ repositories { mavenCentral() }
 dependencies {
     implementation(kotlin("stdlib"))
     testImplementation(kotlin("test"))
+    // later remove this dependency and abstract validation away
+    compileOnly("jakarta.validation:jakarta.validation-api:3.0.2")
 }
